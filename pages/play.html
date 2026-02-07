@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Main - Evaluasi Gizi</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/play.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">MIEDGIZI</div>
+    <div class="menu">
+        <a href="../index.html">Beranda</a>
+        <a href="learn.html">Belajar</a>
+        <a href="play.html">Main</a>
+        <a href="quiz.html">Kuis</a>
+    </div>
+</nav>
+
+<section class="play-container">
+
+    <h2>Evaluasi Keseimbangan Gizi</h2>
+    <p>Masukkan 4 makanan ke dalam piring sesuai pilihanmu</p>
+
+    <div class="foods" id="foods"></div>
+
+    <div class="plate-area">
+        <img src="../assets/images/plate.png" class="plate-img">
+
+        <div class="plate-zones">
+            <div class="zone"></div>
+            <div class="zone"></div>
+            <div class="zone"></div>
+            <div class="zone"></div>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button class="check-btn" onclick="checkNutrition()">Cek Gizi</button>
+        <button class="reset-btn" onclick="resetPlate()">Reset</button>
+    </div>
+
+    <div class="result-box">
+        <p id="result-score"></p>
+        <p id="result-reason"></p>
+        <p id="result-suggestion"></p>
+    </div>
+
+</section>
+
+<script src="../js/play.js"></script>
+</body>
+</html>

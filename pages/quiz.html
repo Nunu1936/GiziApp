@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kuis Gizi</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/quiz.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">MIEDGIZI</div>
+    <div class="menu">
+        <a href="../index.html">Beranda</a>
+        <a href="learn.html">Belajar</a>
+        <a href="play.html">Main</a>
+        <a href="quiz.html">Kuis</a>
+    </div>
+</nav>
+
+<div class="quiz-box">
+    <h2>Kuis Gizi Seimbang</h2>
+
+    <p>1. Makanan sumber protein adalah...</p>
+    <div class="option" onclick="check(this,'benar')">A. Ikan</div>
+    <div class="option" onclick="check(this,'salah')">B. Permen</div>
+    <div class="option" onclick="check(this,'salah')">C. Es Krim</div>
+    <div class="option" onclick="check(this,'salah')">D. Kerupuk</div>
+
+    <p id="result"></p>
+</div>
+
+<script src="../js/quiz.js"></script>
+</body>
+</html>
