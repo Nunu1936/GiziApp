@@ -1,0 +1,20 @@
+.quiz-box {
+    background: white;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.12);
+}
+
+.option {
+    padding: 12px;
+    border: 2px solid #F8BBD0;
+    border-radius: 12px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.option:hover {
+    background: #FCE4EC;
+}

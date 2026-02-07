@@ -1,0 +1,77 @@
+/* ===== TABLET ===== */
+@media (max-width: 1024px) {
+
+    .navbar {
+        padding: 14px 24px;
+    }
+
+    .home-content h1 {
+        font-size: 30px;
+    }
+
+    .foods {
+        justify-content: center;
+    }
+
+    .plate-area {
+        transform: scale(0.9);
+    }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 600px) {
+
+    /* NAVBAR */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px 18px;
+    }
+
+    .menu {
+        margin-top: 10px;
+    }
+
+    .menu a {
+        margin: 0 14px 0 0;
+        font-size: 14px;
+    }
+
+    /* HOME */
+    .home {
+        padding: 24px;
+        text-align: center;
+    }
+
+    .home-content {
+        max-width: 100%;
+    }
+
+    .home-content h1 {
+        font-size: 26px;
+    }
+
+    .home-buttons a {
+        display: block;
+        margin: 10px auto;
+        width: fit-content;
+    }
+
+    /* PLAY */
+    .foods {
+        gap: 10px;
+    }
+
+    .food-item {
+        width: 120px;
+    }
+
+    .plate-area {
+        transform: scale(0.8);
+    }
+
+    /* RESULT */
+    .result-box {
+        font-size: 14px;
+    }
+}

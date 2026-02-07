@@ -1,1 +1,127 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
+body {
+    margin: 0;
+    background: #FFF7FA;
+    color: #37474F;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 40px;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-weight: 700;
+    font-size: 20px;
+    color: #EC407A;
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .menu a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #555;
+}
+
+.navbar .menu a:hover {
+    color: #EC407A;
+}
+
+/* ===== LANDING ===== */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 60px;
+    min-height: 100vh;
+
+    background:
+        linear-gradient(rgba(255,247,250,0.9), rgba(255,247,250,0.9)),
+        url("../assets/images/bg-home.jpg") center / cover no-repeat;
+
+    background-attachment: fixed;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    font-size: 38px;
+    color: #EC407A;
+}
+
+.hero-text p {
+    margin: 20px 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.btn-primary {
+    background: #EC407A;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* ===== CARD ===== */
+.section {
+    padding: 80px 20px;
+    background: #FFF1F5;
+}
+
+.card-grid {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    border-radius: 24px;
+    padding: 30px;
+    width: 260px;
+    box-shadow: 0 10px 25px rgba(236, 64, 122, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 35px rgba(236, 64, 122, 0.25);
+}
+
+/* ===== PLAY ===== */
+.food {
+    padding: 10px;
+    background: #FCE4EC;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: grab;
+}
+
+.dropzone {
+    border: 2px dashed #EC407A;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 10px;
+}
