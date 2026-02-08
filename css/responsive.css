@@ -1,77 +1,106 @@
-/* ===== TABLET ===== */
+/* ==================================================
+   GLOBAL RESPONSIVE
+   Berlaku untuk SEMUA halaman
+================================================== */
+
+/* ========== TABLET (≤ 1024px) ========== */
 @media (max-width: 1024px) {
 
+    body {
+        font-size: 15px;
+    }
+
+    /* NAVBAR */
     .navbar {
         padding: 14px 24px;
     }
 
-    .home-content h1 {
-        font-size: 30px;
+    .navbar .menu {
+        gap: 16px;
     }
 
-    .foods {
+    /* SECTION UMUM */
+    .section {
+        padding: 40px 24px;
+    }
+
+    /* CARD / BOX UMUM */
+    .card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    /* FLEX CONTAINER */
+    .card-grid,
+    .container,
+    .content,
+    .wrapper {
         justify-content: center;
-    }
-
-    .plate-area {
-        transform: scale(0.9);
     }
 }
 
-/* ===== MOBILE ===== */
+/* ========== MOBILE (≤ 600px) ========== */
 @media (max-width: 600px) {
+
+    body {
+        font-size: 14px;
+    }
 
     /* NAVBAR */
     .navbar {
         flex-direction: column;
         align-items: flex-start;
-        padding: 12px 18px;
+        padding: 12px 20px;
     }
 
-    .menu {
+    .navbar .menu {
+        flex-wrap: wrap;
         margin-top: 10px;
+        gap: 12px;
     }
 
-    .menu a {
-        margin: 0 14px 0 0;
+    /* SECTION */
+    .section {
+        padding: 30px 20px;
+    }
+
+    /* TEXT */
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
         font-size: 14px;
     }
 
-    /* HOME */
-    .home {
-        padding: 24px;
-        text-align: center;
-    }
-
-    .home-content {
+    /* CARD */
+    .card {
+        width: 100%;
         max-width: 100%;
     }
 
-    .home-content h1 {
-        font-size: 26px;
+    /* BUTTON */
+    button,
+    .btn-primary {
+        width: 100%;
+        text-align: center;
     }
 
-    .home-buttons a {
-        display: block;
-        margin: 10px auto;
-        width: fit-content;
+    /* FORM & INPUT */
+    input,
+    select {
+        width: 100%;
     }
 
-    /* PLAY */
-    .foods {
-        gap: 10px;
-    }
-
-    .food-item {
-        width: 120px;
-    }
-
-    .plate-area {
-        transform: scale(0.8);
-    }
-
-    /* RESULT */
-    .result-box {
-        font-size: 14px;
+    /* PLAY & QUIZ AREA */
+    .foods,
+    .plate-area,
+    .quiz-container {
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }
