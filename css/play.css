@@ -1,28 +1,47 @@
+/* ===============================
+   PLAY CONTAINER
+================================ */
 .play-container {
     padding: 40px;
     text-align: center;
 }
 
-/* ===== FOOD LIST ===== */
-.foods {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
+/* ===============================
+   FOOD SLIDER (SWIPE)
+================================ */
+.food-slider-wrapper {
+    width: 100%;
+    overflow: hidden;
     margin: 30px 0;
 }
 
-.food-item {
-    width: 120px;
+.foods.food-slider {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding: 10px;
+    scroll-behavior: smooth;
+}
+
+.foods.food-slider::-webkit-scrollbar {
+    display: none;
+}
+
+/* ===============================
+   FOOD ITEM
+================================ */
+.food {
+    min-width: 120px;
     background: #FCE4EC;
     border-radius: 16px;
     padding: 10px;
-    cursor: grab;
+    cursor: pointer;
     box-shadow: 0 4px 10px rgba(0,0,0,.12);
     text-align: center;
+    transition: transform .2s ease;
 }
 
-.food-item img {
+.food img {
     width: 60px;
     height: 60px;
     object-fit: contain;
@@ -39,7 +58,26 @@
     color: #EC407A;
 }
 
-/* ===== PLATE ===== */
+/* TAP EFFECT */
+.food:active {
+    transform: scale(0.95);
+}
+
+/* SELECTED ANIMATION */
+.food.selected {
+    outline: 3px solid #EC407A;
+    animation: bounce 0.3s;
+}
+
+@keyframes bounce {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+}
+
+/* ===============================
+   PLATE
+================================ */
 .plate-area {
     position: relative;
     width: 320px;
@@ -69,13 +107,22 @@
     font-weight: 600;
     text-align: center;
     padding: 10px;
+    transition: background .3s ease;
 }
 
 .zone.filled {
     background: #F8BBD0;
+    animation: fadeIn .3s;
 }
 
-/* ===== BUTTON ===== */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* ===============================
+   BUTTON
+================================ */
 .buttons {
     margin-top: 20px;
 }
@@ -99,6 +146,9 @@
     background: #E0E0E0;
 }
 
+/* ===============================
+   RESULT
+================================ */
 .result-box {
     margin-top: 20px;
     background: #FCE4EC;

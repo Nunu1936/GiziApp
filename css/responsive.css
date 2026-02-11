@@ -104,3 +104,47 @@
         flex-wrap: wrap;
     }
 }
+
+/* ===== FOOD SLIDER ===== */
+.food-slider-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.food-slider {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px;
+}
+
+.food-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.food-slider .food {
+    min-width: 120px;
+    text-align: center;
+}
+
+/* BUTTON */
+.slider-btn {
+    background: #EC407A;
+    color: white;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.slider-btn:hover {
+    background: #d81b60;
+}
