@@ -18,3 +18,33 @@
 .option:hover {
     background: #FCE4EC;
 }
+
+/* TABLET */
+@media (max-width: 1024px) {
+
+    .quiz-box {
+        max-width: 90%;
+        padding: 24px;
+    }
+
+    .option {
+        font-size: 15px;
+        padding: 14px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+    .quiz-box {
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 16px;
+    }
+
+    .option {
+        font-size: 14px;
+        padding: 14px;
+        margin: 12px 0;
+    }
+}
