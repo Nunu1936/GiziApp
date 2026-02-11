@@ -15,7 +15,7 @@
     <div class="menu">
         <a href="../index.html">Beranda</a>
         <a href="learn.html">Belajar</a>
-        <a href="play.html">Main</a>
+        <a href="play.html" class="active">Main</a>
         <a href="quiz.html">Kuis</a>
     </div>
 </nav>
@@ -23,26 +23,32 @@
 <section class="play-container">
 
     <h2>Evaluasi Keseimbangan Gizi</h2>
-    <p>Masukkan 4 makanan ke dalam piring sesuai pilihanmu</p>
+    <p>Pilih makanan lalu sentuh bagian piring</p>
 
-    <div class="foods" id="foods"></div>
+    <!-- ===== FOOD SLIDER (SWIPE) ===== -->
+    <div class="food-slider-wrapper">
+        <div class="foods food-slider" id="foodSlider"></div>
+    </div>
 
+    <!-- ===== PLATE ===== -->
     <div class="plate-area">
-        <img src="../assets/images/plate.png" class="plate-img">
+        <img src="../assets/images/plate.png" class="plate-img" alt="Piring">
 
         <div class="plate-zones">
-            <div class="zone"></div>
-            <div class="zone"></div>
-            <div class="zone"></div>
-            <div class="zone"></div>
+            <div class="zone">Slot 1</div>
+            <div class="zone">Slot 2</div>
+            <div class="zone">Slot 3</div>
+            <div class="zone">Slot 4</div>
         </div>
     </div>
 
+    <!-- ===== BUTTON ===== -->
     <div class="buttons">
         <button class="check-btn" onclick="checkNutrition()">Cek Gizi</button>
         <button class="reset-btn" onclick="resetPlate()">Reset</button>
     </div>
 
+    <!-- ===== RESULT ===== -->
     <div class="result-box">
         <p id="result-score"></p>
         <p id="result-reason"></p>
